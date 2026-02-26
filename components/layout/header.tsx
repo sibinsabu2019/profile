@@ -1,14 +1,12 @@
-'use client'
+"use client"
 
-import { motion } from 'motion/react'
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Navbar from './navbar'
-import ThemeSwitcher from './theme-switcher'
-import Image from 'next/image'
-import MobileNav from './mobile-nav'
-import { cn } from '@/lib/utils'
-import { layoutUI } from '@/lib/constants'
+import { motion } from "motion/react"
+import { useEffect, useState } from "react"
+import Link from "next/link"
+import Navbar from "./navbar"
+import ThemeSwitcher from "./theme-switcher"
+import MobileNav from "./mobile-nav"
+import { cn } from "@/lib/utils"
 
 const SCROLL_THRESHOLD = 100
 
@@ -18,41 +16,31 @@ const Header = () => {
   useEffect(() => {
     const onScroll = () => {
       const scrolled = window.scrollY > SCROLL_THRESHOLD
-      setIsScrolled(prev => (prev === scrolled ? prev : scrolled))
+      setIsScrolled((prev) => (prev === scrolled ? prev : scrolled))
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener("scroll", onScroll, { passive: true })
     onScroll()
 
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
   return (
     <motion.header
       layoutId="header"
       className={cn(
-        'bg-background/30 shadow-xs fixed inset-x-0 top-4 z-40 mx-auto flex h-15 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px] transition-colors',
-        isScrolled && 'bg-background/80'
+        "bg-background/30 shadow-xs fixed inset-x-0 top-4 z-40 mx-auto flex h-15 max-w-5xl items-center justify-between rounded-2xl px-8 saturate-100 backdrop-blur-[10px] transition-colors",
+        isScrolled && "bg-background/80"
       )}
-      initial={{
-        y: -100
-      }}
-      animate={{
-        y: 0
-      }}
-      transition={{
-        duration: 0.3
-      }}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.3 }}
     >
-      <Link
-        href='/'
-        className='flex items-center justify-center gap-1'
-        aria-label={"Home"}
-      >
-        <Image alt='light-mode-img' src={layoutUI.lightImagePath} width={28} height={28} aria-hidden='true' className='w-6 h-auto dark:hidden' />
-        <Image alt='dark-mode-img' src={layoutUI.darkImagePath} width={28} height={28} aria-hidden='true' className='w-6 h-auto hidden dark:block' />
+      <Link href="/" className="flex items-center justify-center gap-1" aria-label="Home">
+        <span className="text-2xl font-bold tracking-tight text-foreground">S</span>
       </Link>
-      <div className='flex items-center gap-2'>
+
+      <div className="flex items-center gap-2">
         <Navbar />
         <ThemeSwitcher />
         <MobileNav />

@@ -51,7 +51,7 @@ const Header = (props: HeaderProps) => {
         )}
         {github && (
           <Link href={github || "#"} className={cn(buttonVariants(), 'group')} target="_blank">
-            {GITHUB_USERNAME}/{repo}
+            {"View Project"}
             <ArrowUpRightIcon className='ml-2 size-5 transition-transform group-hover:-rotate-12' />
           </Link>
         )}

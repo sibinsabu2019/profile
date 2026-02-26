@@ -1,25 +1,28 @@
 "use client";
 import { AnimatePresence, motion, easeIn, easeOut, Variants } from "motion/react";
 import { useEffect, useState } from "react";
-import { BlurImage } from "../ui/blur-image";
 import { introText } from "@/lib/constants";
 
 const TEXTS = [
   {
     key: "amazing",
-    className: "bg-clip-text text-center text-transparent bg-linear-to-r from-[#ff1835] to-[#ffc900]",
+    className:
+      "bg-clip-text text-center text-transparent bg-linear-to-r from-[#ff1835] to-[#ffc900]",
   },
   {
     key: "stunning",
-    className: "bg-clip-text text-center text-transparent bg-linear-to-r from-[#0077ff] to-[#00e7df]",
+    className:
+      "bg-clip-text text-center text-transparent bg-linear-to-r from-[#0077ff] to-[#00e7df]",
   },
   {
     key: "fantastic",
-    className: "bg-clip-text text-center text-transparent bg-linear-to-r from-[#7f00de] to-[#ff007f]",
+    className:
+      "bg-clip-text text-center text-transparent bg-linear-to-r from-[#7f00de] to-[#ff007f]",
   },
   {
     key: "attractive",
-    className: "bg-clip-text text-center text-transparent bg-linear-to-r from-[#2ecc70] to-[#1ca085]",
+    className:
+      "bg-clip-text text-center text-transparent bg-linear-to-r from-[#2ecc70] to-[#1ca085]",
   },
 ] as const;
 
@@ -93,9 +96,7 @@ const Hero = () => {
                       transition={{ type: "tween", duration: 0.3 }}
                       className="inline-flex"
                     >
-                      <span
-                        className={`${textItem.className} wrap-break-word sm:break-keep text-balance`}
-                      >
+                      <span className={`${textItem.className} wrap-break-word sm:break-keep text-balance`}>
                         {textItem.key}
                       </span>
                     </motion.span>
@@ -115,28 +116,18 @@ const Hero = () => {
             {introText.location}
           </motion.div>
         </div>
+
+        {/* Right-side circle logo (Text "S" instead of image) */}
         <motion.div
           className="relative hidden size-28 md:block"
-          initial={{
-            scale: 0,
-          }}
-          animate={{
-            scale: 1,
-          }}
-          transition={{
-            duration: 0.3,
-          }}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.3 }}
         >
-          <BlurImage
-            src={introText.imagePath}
-            className="rounded-full"
-            width={112}
-            height={112}
-            alt="Nevin"
-            lazy={false}
-            priority={true}
-            fetchPriority="high"
-          />
+          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-foreground text-background text-7xl font-extrabold">
+            S
+          </div>
+
           <div className="bg-linear-to-tl absolute inset-0 -z-10 from-purple-700 to-orange-700 opacity-50 blur-2xl" />
         </motion.div>
       </div>

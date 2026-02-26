@@ -1,27 +1,21 @@
 "use client"
-import { BlurImage } from "@/components/ui/blur-image";
-import { contactInfo, techTags } from "@/lib/constants";
-import { motion, useAnimate, useInView } from "motion/react";
-import { useEffect, useRef } from "react";
+
+import { contactInfo, techTags } from "@/lib/constants"
+import { motion, useAnimate, useInView } from "motion/react"
+import { useEffect, useRef } from "react"
 
 const variants = {
-  initial: {
-    y: 40,
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-  },
-};
+  initial: { y: 40, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+}
 
 const GetInTouch = () => {
-  const [scope, animate] = useAnimate();
-  const cardsRef = useRef<HTMLDivElement>(null);
-  const isInView = useInView(cardsRef, { once: true, margin: "-100px" });
+  const [scope, animate] = useAnimate()
+  const cardsRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(cardsRef, { once: true, margin: "-100px" })
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView) return
 
     const controls = animate(
       [
@@ -39,13 +33,11 @@ const GetInTouch = () => {
         ["#pointer", { left: 200, top: 60 }, { at: "+0.5", duration: 0.5, ease: "easeInOut" }],
         ["#next-js", { opacity: 0.4 }, { at: "-0.3", duration: 0.1 }],
       ],
-      {
-        repeat: Infinity,
-      }
-    );
+      { repeat: Infinity }
+    )
 
-    return () => controls.stop();
-  }, [animate, isInView]);
+    return () => controls.stop()
+  }, [animate, isInView])
 
   return (
     <motion.div
@@ -54,20 +46,16 @@ const GetInTouch = () => {
       animate={isInView ? "animate" : "initial"}
       variants={variants}
       ref={cardsRef}
-      transition={{
-        duration: 0.5,
-      }}
+      transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col gap-6 rounded-[11px] p-4 lg:p-6">
         <div className="flex gap-12 max-md:flex-col">
           <div className="relative size-64 max-md:mx-auto" ref={scope}>
-            <BlurImage
-              src={techTags.imagePath}
-              width={3975}
-              height={3975}
-              className="absolute left-1/2 top-1/2 size-20 -translate-x-1/2 -translate-y-1/2 rounded-[20px]"
-              alt={"getintouchLogo"}
-            />
+            {/* Text logo (replaces image) */}
+            <div className="absolute left-1/2 top-1/2 flex size-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[20px] bg-foreground text-background text-4xl font-extrabold">
+              {techTags.author?.charAt(0) ?? "S"}
+            </div>
+
             <div
               id="next-js"
               className="bg-linear-to-b absolute bottom-12 left-14 rounded-3xl border from-zinc-50 to-zinc-100 px-2 py-1.5 text-xs opacity-40 dark:from-zinc-800 dark:to-zinc-900"
@@ -119,9 +107,8 @@ const GetInTouch = () => {
             <p className="bg-linear-to-r mb-2 from-black to-black/70 bg-clip-text text-3xl font-semibold text-transparent dark:from-zinc-100 dark:to-zinc-400">
               {contactInfo.promptHeading}
             </p>
-            <p className="text-zinc-800 dark:text-zinc-300">
-              {contactInfo.promptText}
-            </p>
+            <p className="text-zinc-800 dark:text-zinc-300">{contactInfo.promptText}</p>
+
             <div className="my-8">
               <a
                 href={`mailto:${contactInfo.email}`}

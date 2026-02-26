@@ -17,11 +17,11 @@ export const HEADER_LINKS = [
     href: "/journey",
     key: "Journey",
   },
-  {
-    icon: <ShieldCheck className="size-3.5" />,
-    href: "/certs",
-    key: "Certs",
-  },
+  // {
+  //   icon: <ShieldCheck className="size-3.5" />,
+  //   href: "/certs",
+  //   key: "Certs",
+  // },
   {
     icon: <LaptopMinimal className="size-3.5" />,
     href: "/tech",
@@ -38,14 +38,14 @@ export const FOOTER_LINKS = [
       { href: "/projects", key: "Projects" },
     ],
   },
-  {
-    id: 2,
-    links: [
-      { href: "/journey", key: "Journey" },
-      { href: "/certs", key: "Certs" },
-      { href: "/tech", key: "Tech" },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   links: [
+  //     { href: "/journey", key: "Journey" },
+  //     // { href: "/certs", key: "Certs" },
+  //     { href: "/tech", key: "Tech" },
+  //   ],
+  // },
   {
     id: 3,
     links: SOCIAL_LINKS.map((link) => ({

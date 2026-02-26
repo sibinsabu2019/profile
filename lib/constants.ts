@@ -5,14 +5,14 @@ export const isProduction = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT ?? 3000;
 export const SITE_URL = isProduction ? "https://nevin.vercel.app" : `http://localhost:${PORT}`;
 
-export const GITHUB_USERNAME = "NevinMichael10";
-export const SITE_NAME = "Nevin Michael";
-export const SITE_GITHUB_URL = "https://github.com/NevinMichael10";
-export const SITE_FACEBOOK_URL = "https://www.facebook.com/Nevin.michael.28";
-export const SITE_INSTAGRAM_URL = "https://www.instagram.com/infernal_encipherer";
-export const SITE_LINKEDIN_URL = "https://www.linkedin.com/in/nevin-michael-24716a231";
+export const GITHUB_USERNAME = "sibinsabu2019"; 
+export const SITE_NAME = "Sibin Sabu";
+export const SITE_GITHUB_URL = "https://github.com/sibinsabu2019/";
+export const SITE_FACEBOOK_URL = "https://www.facebook.com/";
+export const SITE_INSTAGRAM_URL = "https://www.instagram.com/sibin_sabu_____";
+export const SITE_LINKEDIN_URL = "https://www.linkedin.com/in/sibin-sabu-4159b5277/";
 
-export const authorName = "Nevin Michael";
+export const authorName = "Sibin Sabu";
 
 export const SITE_KEYWORDS = [
   `${authorName}`, "Software Engineer", "React Developer", "Next.js Developer", "Full Stack Developer", 
@@ -54,8 +54,8 @@ export const layoutUI = {
 
 //Home Page
 export const homePage = {
-  title: "Nevin Michael's Portfolio",
-  description: "Nevin Michael's Portfolio Website Home Page",
+  title: "Sibin Sabu's Portfolio",
+  description: "Sibin Sabu's Portfolio Website Home Page",
   metaTitle: `Meet ${authorName} - Building the Future with Modern Technology`,
   metaDesc: `${authorName} is a Software Engineer with a drive for creating impactful, scalable solutions across platforms using the latest in modern technology and development tools.`,
   metaKeywords: [
@@ -73,23 +73,23 @@ export const ABOUTME = {
 export const contactInfo = {
   promptHeading: "Any questions?",
   promptText: "Feel free to reach out to me!",
-  email: "nevinmichael28@gmail.com",
+  email: "sibinsabu2019@gmail.com",
 };
 
 export const introText = {
   greetingLeft: `I'm ${authorName}, a Software Engineer building`,
-  greetingRight: "websites using modern technologies",
+  greetingRight: "websites & Mobiles Apps- using modern technologies",
   location: "India • UTC/GMT +5:30",
   imagePath: "/images/logo/nlogo-black-bg.svg",
 };
 
 export const techTags: TechTags = {
-  author: "Nevin", // First name only
+  author: "Sibin", // First name only
   imagePath: "/images/logo/nlogo-black-bg.svg",
   label: "Next.js",
   label2: "React.js",
-  label3: "TypeScript",
-  label4: "JavaScript",
+  label3: "Flutter",
+  label4: "Firebase",
 };
 
 //About Page
@@ -108,10 +108,36 @@ export const aboutPage = {
 export const whoAmIData = {
   bio: {
     role: "Software Engineer",
-    birthDate: "2001-10-28", //yyyy-mm-dd format strictly
+    birthDate: "2000-03-01", //yyyy-mm-dd format strictly
     description: "I'm passionate about building cutting-edge applications that solve real-world problems. With a blend of technical expertise, creative thinking, and a constant hunger for learning, I develop solutions that are not only functional but also impactful.",
   },
-  skills: ["React.js", "Next.js", "Spring Boot", "Mendix", "PostgreSQL", "MySQL", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind", "Bootstrap", "Git", "GitHub", "DigitalOcean", "Linux", "Power Automate", "Watson Orchestrate", "Zustand", "VS Code", "IntelliJ", "STS", "Canva", "Photoshop"],
+  skills: [
+  "Flutter",
+  "Dart",
+  "Firebase",
+  ".NET",
+  "MySQL",
+  "PostgreSQL",
+  "Spring Boot",
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "Tailwind CSS",
+  "Bootstrap",
+  "REST API Development",
+  "Android Studio",
+  "Git",
+  "GitHub",
+  "DigitalOcean",
+  "Linux",
+  "VS Code",
+  "IntelliJ IDEA",
+  "Canva",
+  "Photoshop"
+],
   whyMe: [
     {
       id: 1,
@@ -226,23 +252,23 @@ export const experiences: Experience[] = [
   {
     id: 1,
     title: "Software Engineer",
-    organization: "Strebentechnik Private Limited, Alappuzha",
-    date: "January 2024 - Present",
+    organization: "Cinque Technologies",
+    date: "June 2025 - Present",
     description: ["Developing and maintaining software applications."],
   },
   {
     id: 2,
-    title: "Intern",
-    organization: "Strebentechnik Private Limited, Alappuzha",
-    date: "August 2023 - January 2024",
-    description: ["Worked on Mendix low-code development, HTML, CSS and other technologies.",],
+    title: "Software Engineer",
+    organization: "Verdant IT solutions ",
+    date: "september 2023 - june 2024",
+    description: ["Worked on WEB & MOBILE Development ,FLutter,Next js, HTML, CSS and other technologies.",],
   },
   {
     id: 3,
-    title: "Data Entry Specialist",
-    organization: "AITIA Infotech, Kochi",
-    date: "2019 - 2020",
-    description: ["Handled data entry, provided telecalling support, and managed data processing in Excel for business operations."],
+    title: "Intern",
+    organization: "Verdant IT solutions",
+    date: "june 2023 - september 2023",
+    description: ["Worked on WEB & MOBILE Development ,FLutter,Next js, HTML, CSS and other technologies."],
   },
 ];
 
@@ -253,17 +279,23 @@ export const education: Education[] = [
     institution: "College of Engineering and Management Punnapra, Alappuzha, Kerala",
     period: "2019 - 2023",
   },
-  {
+   {
     id: 2,
-    course: "Higher Secondary",
-    institution: "Santa Cruz HSS Fort Kochi, Ernakulam, Kerala",
+    course: "Deploma in Computer Engineering ",
+    institution: "Sree Narayayana Higher Secondary school Poothadi",
     period: "2017 - 2019",
   },
   {
     id: 3,
+    course: "Higher Secondary",
+    institution: "Sree Narayayana Higher Secondary school Poothadi",
+    period: "2015 - 2017",
+  },
+  {
+    id: 4,
     course: "High School",
-    institution: "St. Louis High School Mundamveli, Ernakulam, Kerala",
-    period: "2014 - 2017",
+    institution: "Sree Narayayana Higher Secondary school Poothadi",
+    period: "2013 - 2015",
   },
 ];
 
@@ -283,53 +315,91 @@ export const projectPage = {
 export const projects: Project[] = [
   {
     id: "project1",
-    name: "MediaArms",
-    description: "An advertising platform for voice ads on radio channels.",
-    detailedDescription: "MediaArms is a powerful advertising platform built using Next.js, allowing businesses to order and place voice ads on selected radio channels. It streamlines ad bookings with a simple and intuitive interface, ensuring smooth transactions between advertisers and radio stations. The platform enables users to browse and select radio channels, explore a curated list of stations, and pick the best fit for their advertisements. Advertisers can define their ad campaign duration, frequency, and target audience while benefiting from real-time cost calculation based on selected time slots and ad duration. MediaArms also includes a cart functionality, allowing users to add and manage multiple ad placements before finalizing their order. Secure payments are integrated through Razorpay for seamless UPI and online transactions. Advertisers can track past and ongoing campaigns through a detailed dashboard, ensuring complete visibility of their ad history. The platform is built with Next.js, TypeScript, and Tailwind CSS on the frontend, while the backend leverages Node.js and Express, with PostgreSQL as the database. Payment integration is handled via Razorpay. This project showcases expertise in Next.js, TypeScript, payment integration, and real-time cost calculation for advertising platforms.",
-    techstack: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "next-auth", "Spring Boot"],
-    slug: "mediaarms",
-    website: "https://www.mediaarms.com",
-    imgPath: "/images/projects/project1.webp"
+    name: "QK wash",
+    description: "A smart laundry platform for booking and activating automated washing machines",
+    detailedDescription: "QK Wash is a Flutter-based smart laundry platform that allows users to locate nearby washing hubs, make secure payments via Razorpay, and remotely activate automated washing machines. The system integrates Firebase backend services for real-time data and user management.",
+    techstack:  [
+  "Flutter",
+  "Firebase Authentication",
+  "Cloud Firestore",
+  "Razorpay",
+  "IoT Integration",
+],
+    slug: "qk-wash",
+    website: "",
+    imgPath: "/images/projects/qkwash.webp"
   },
   {
     id: "project2",
-    name: "People Integrator",
-    description: "A survey management system with chatbot integration.",
-    detailedDescription: "People Integrator is a survey management system designed to facilitate survey creation, distribution, and completion across multiple organizations and participants. The system uses role-based access for Super Admins, Organization Admins, and Participants to streamline functionality. Super Admins can create and manage questions, sections, and templates tailored to different industries. Organization Admins can group participants, select relevant templates, and schedule surveys, while Participants can respond to surveys using a chatbot interface with predefined answer selections. The system supports a scalable architecture, allowing multiple organizations, industries, and business functions to operate within a robust role-based framework. The technology stack includes Thymeleaf, Bootstrap, and jQuery for the frontend, while the backend is powered by Spring Boot (Java 11) and Apache Tomcat. The system uses RESTful APIs with Spring Security for authentication and MySQL as the database. Deployment is managed using Maven, and the application is deployed as a WAR file on Tomcat, with SSH used for secure server access and automation. The system also supports role-based authentication and secure data handling. This project showcases expertise in Spring Boot, Java, chatbot-driven surveys, and role-based access control.",
-    techstack: ["Spring Boot", "Java 11", "Thymeleaf", "Bootstrap", "MySQL", "Tomcat"],
-    slug: "people-integrator",
-    website: "https://www.peopleintegrator.com/home",
-    imgPath: "/images/projects/project2.webp"
+    name: "Badminton FSPC MU",
+    description: "A badminton club booking platform to reserve slots, explore coaches, and review clubs",
+    detailedDescription: "Badminton FSPC MU is a Check Republic–based badminton discovery and booking app that lets users browse clubs and coaches, book available court slots, and share reviews. Built with Firebase, it supports real-time slot availability, user accounts, and secure data management.",
+    techstack: ["Firebase", "Thymeleaf", "Bootstrap", "MySQL", "Tomcat"],
+    slug: "badminton-fspc-mu",
+    website: "https://badmintonfsps.cz/",
+    imgPath: "/images/projects/Badminton.webp"
   },
   {
     id: "project3",
-    name: "Digital Passport Verification Using Blockchain",
-    description: "A web-based application that enhances passport verification security using blockchain technology.",
-    detailedDescription: "The Digital Passport Verification System is a decentralized application (dApp) that improves passport authentication by leveraging blockchain. Built with Solidity, React.js, and Ether.js, this project ensures secure and tamper-proof identity verification. The system eliminates fraud and enhances efficiency by allowing authorities to verify passport details via a blockchain ledger, ensuring data integrity and reducing dependency on centralized databases.",
-    techstack: ["Solidity", "React.js", "Ether.js", "Node.js", "Blockchain"],
-    slug: "digital-passport-verification",
-    github: "https://github.com/NevinMichael10/blockchain-passport-verification",
-    imgPath: "/images/projects/project3.webp"
+    name: "LicenseMaster",
+    description: "A comprehensive driving license preparation app with practice tests, road signs, and RTO resources.",
+    detailedDescription: "LicenseMaster is a Flutter-based driving license preparation app that helps users practice exam questions, learn road signs, explore RTO codes, and find nearby driving schools by city. Powered by Firebase, it delivers real-time updates, structured learning modules, and push notifications for test reminders.",
+    techstack: [
+  "Flutter",
+  "Firebase Authentication",
+  "Cloud Firestore",
+  "Firebase Storage",
+  "Push Notifications (FCM)"
+],
+    slug: "licensemaster",
+    github: "https://play.google.com/store/apps/details?id=com.nextgen.app&pcampaignid=web_share",
+    imgPath: "/images/projects/license.webp"
   },
   {
     id: "project4",
-    name: "Image Detection Using YOLOv5",
-    description: "An advanced image detection system using YOLOv5 for the coir and rubber industries.",
-    detailedDescription: "This project successfully implemented an image detection model with YOLOv5 to identify 'coir,' 'rubber,' and 'rubber coir moulded mats.' The project involved dataset collection by capturing diverse mat varieties across Alappuzha, annotation and conversion using Python, lxml, and PyQt5 for image processing, labelImg for annotation in PascalVOC format, and a custom script for YOLO format conversion. The dataset was organized into training and validation sets for optimal model performance. Model training and detection were performed using YOLOv5 with optimal parameters to enable efficient object detection. Additionally, a user-friendly GUI was developed using Tkinter to enhance the overall user experience. This project showcases expertise in computer vision, deep learning, and effective project management, leading to precise detection in industrial applications.",
-    techstack: ["Python", "YOLOv5", "Tkinter"],
-    slug: "mat-detection-yolov5",
-    github: "https://github.com/NevinMichael10/mat-detection",
-    imgPath: "/images/projects/project4.webp"
+    name: "Mehndi & Hair Design",
+    description: "A beauty inspiration app for mehndi and hairstyle designs with uploads, ads, and premium content",
+    detailedDescription: "Mehndi & Hair Design is a Flutter-based design gallery app featuring curated mehndi and hairstyle collections, with the ability for users to upload and share custom designs. Built with Firebase, it supports real-time content updates, push notifications, AdMob monetization, and in-app purchases for premium design packs.",
+    techstack: [ "Flutter",
+  "Firebase Authentication",
+  "Cloud Firestore",
+  "Firebase Storage",
+  "Firebase Cloud Messaging (Push Notifications)",
+  "Google AdMob",
+  "In-App Purchases"],
+    slug: "mehndi-hair-design",
+    github: "https://play.google.com/store/apps/details?id=com.techify.mehandidesigns&pcampaignid=web_share",
+    imgPath: "/images/projects/mehandi.webp"
   },
   {
     id: "project5",
-    name: "Prompt Desk",
-    description: "A front desk management system built with Mendix for handling complaints, invoices, and weather integration.",
-    detailedDescription: "Prompt Desk is a robust web application developed using Mendix, designed to enhance the interaction between employees and customers. This platform streamlines complaint handling, facilitates invoice generation, and provides real-time weather updates. It includes authentication and user roles with a single login page supporting Admin, Employee, and Customer roles. The system features secure user registration with admin approval for employees and email confirmation for all users. Real-time weather data is integrated through a Weather API. Complaint management is streamlined with efficient registration, resolution, and automated email notifications for product complaints. The platform also includes product management, allowing customer product registration and status tracking. Personalized dashboards are available for Employees, Customers, and Admins, while Admin controls provide oversight of user registrations, configurations, and system settings.",
-    techstack: ["Mendix", "SCSS", "JavaScript", "CSS"],
-    slug: "prompt-desk",
-    github: "https://github.com/NevinMichael10/prompt-desk",
-    imgPath: "/images/projects/project5.webp"
+    name: "Qatar Money Exchange",
+    description: "A secure money exchange platform for real-time international remittances from Qatar.",
+    detailedDescription: "Qatar Money Exchange is a cross-platform remittance application that enables users to transfer funds globally based on live market exchange rates. The system integrates biometric verification, secure authentication, and real-time transaction tracking, backed by a .NET and MySQL server infrastructure.",
+    techstack: [  "Flutter",
+  ".NET Core",
+  "MySQL",
+  "Firebase SMS Authentication",
+  "Biometric Authentication",],
+    slug: "qatar-money-exchange",
+    github: "https://play.google.com/store/apps/details?id=com.nec.remittance&pcampaignid=web_share",
+    imgPath: "/images/projects/exchange.webp"
+  },
+   {
+    id: "project6",
+    name: "Bhagyam-Lottery App",
+    description: "A real-time lottery tracking app with barcode scanning and instant result notifications.",
+    detailedDescription: "Lottery Live is a Flutter-based application that delivers real-time lottery results, barcode scanning for ticket validation, and instant push notifications for winning updates. Built on Firebase, the platform ensures live data synchronization and predictive insights for enhanced user engagement.",
+    techstack:[
+  "Flutter",
+  "Firebase Authentication",
+  "Cloud Firestore / Realtime Database",
+  "Firebase Cloud Messaging",
+  "Barcode Scanner Integration"
+],
+    slug: "bhagyam-lottery",
+    github: "https://play.google.com/store/apps/details?id=com.RatingApps.keralaLotteryResult&pcampaignid=web_share",
+    imgPath: "/images/projects/lottery.webp"
   }
 ]
 
@@ -339,11 +409,32 @@ export const techPage = {
   description: "Check out some of the technologies and tools i am using",
   metaTitle: `${authorName}'s Tech Stack`,
   metaDesc: `Browse through ${authorName}'s latest development projects, featuring modern tech stacks like React, Next.js, TypeScript, Spring Boot, and Tailwind CSS. Built to be performant, scalable, and visually stunning.`,
-  metaKeywords: [
-    "Tech Stacks", "Tools I Use", "React.js", "Next.js", "TypeScript", "JavaScript", "Spring Boot", "Mendix", 
-    "MySQL", "PostgreSQL", "Tailwind CSS", "Zustand", "GitHub", "DigitalOcean", "Linux", "VS Code", 
-    "Tech Stack Portfolio", "Development Tools", "Frontend Tech", "Backend Tech", "Mendix", "Power Automate"
-  ],  
+ metaKeywords: [
+  "Tech Stack",
+  "Tools I Use",
+  "Flutter",
+  "Dart",
+  "Firebase",
+  "Android Development",
+  ".NET",
+  "MySQL",
+  "PostgreSQL",
+  "Spring Boot",
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Tailwind CSS",
+  "GitHub",
+  "DigitalOcean",
+  "Linux",
+  "VS Code",
+  "IIS Server",
+  "REST API",
+  "Full Stack Development",
+  "Mobile App Development",
+  "Backend Development"
+],
 };
 
 export const stackGroups = [
@@ -364,16 +455,16 @@ export const stackGroups = [
         url: "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
       },
       {
-        imagePath: "/images/tech/intellij.png",
-        name: "IntelliJ IDEA",
-        description: "Java IDE",
-        url: "https://www.jetbrains.com/idea/",
+        imagePath: "/images/tech/flutter.png",
+        name: "Flutter",
+        description: "Android KIT",
+        url: "https://flutter.dev/",
       },
       {
-        imagePath: "/images/tech/sts.png",
-        name: "Spring Tool Suite",
-        description: "Spring IDE",
-        url: "https://spring.io/tools",
+        imagePath: "/images/tech/Android Studio.png",
+        name:"Android Studio",
+        description: "Android IDE",
+        url: "https://developer.android.com/studio",
       },
       {
         imagePath: "/images/tech/git.png",
